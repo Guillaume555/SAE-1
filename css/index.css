@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Karma:wght@300;400;500;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le défilement de la page */
+}
+
+.menu {
+    background-color: rgba(51, 51, 51, 0); /* Couleur de fond avec transparence */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Assure que le menu reste au-dessus du slider */
+    transition: background-color 0.5s; /* Ajout d'une transition pour un effet en douceur */
+}
+
+.menu img {
+    width: 70px; /* Ajustez la largeur du logo selon vos besoins */
+    margin-right: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Pousse les éléments à droite */
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Kalam;
+}
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(85%);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 128px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+}
+.boutton{
+    width: 160px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 63px;
+    border: 2px solid #FFF;
+    background: rgba(255, 251, 251, 0.00);
+    font-family: Karma;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFF;
+    
+}
+.boutton:hover{
+    color: rgb(255, 255, 255);
+    background-color: #0000004d;
+}
